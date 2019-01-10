@@ -13,9 +13,14 @@ Fiction/app01/fiction_scrapy
 -------  
     cd Fiction/app01/fiction_scrapy/fiction_scrapy/spiders && scrapy crawl <scrapy爬虫name> --nolog
 
+查看所有的name<scrapy爬虫name>:
+-------  
+    scrapy list
+
 截图示例
 -------  
 ![Alt text](1.png)
+![Alt text](6.png)
 
 小说网站启动命令（启动前先修改数据库配置文件settings.py同步数据库 ）：
 -------  
