@@ -13,9 +13,20 @@ Fiction/app01/fiction_scrapy
 -------  
     cd Fiction/app01/fiction_scrapy/fiction_scrapy/spiders && scrapy crawl <scrapy爬虫name> --nolog
 
-查看所有的name<scrapy爬虫name>:
+查看所有的name<scrapy爬虫name> 命令 scrapy list:
 -------  
-    scrapy list
+    $ scrapy list
+    ymlt
+    yqxs123
+    yubook
+    yueduyue
+    yushuwu
+    yyxs555
+    zfbook
+    zhuishubang
+    zhuishushenqi
+    zhxs
+    ...
 
 截图示例
 -------  
