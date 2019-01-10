@@ -11,10 +11,10 @@ Fiction/app01/fiction_scrapy
 
 爬虫启动命令:
 -------  
-    cd Fiction/app01/fiction_scrapy/fiction_scrapy/spiders && scrapy crawl <scrapy爬虫name> --nolog
+    cd Fiction/app01/fiction_scrapy/fiction_scrapy/spiders && scrapy crawl [spider] --nolog
 
-查看所有的name<scrapy爬虫name> 命令 scrapy list:
--------  
+【scrapy list】列出当前项目中所有可用的spider,每行输出一个spider:
+-------   
     $ scrapy list
     ymlt
     yqxs123
