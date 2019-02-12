@@ -49,16 +49,16 @@ def read_sql(sql):
 
 def index(request):
     Classification = models.Classification.objects.all().order_by("id")
-    Classification_id = request.GET.get("classification_id") if request.GET.get("classification_id") else 25
+    Classification_id = request.GET.get("classification_id") if request.GET.get("classification_id") else 1
 
     Fiction_list = models.Fiction_list.objects.filter(
         cassificationc=models.Classification.objects.get(id=Classification_id))
 
     Ranking_list = models.Fiction_list.objects.filter(
-        cassificationc=models.Classification.objects.get(id=26))
+        cassificationc=models.Classification.objects.get(id=1))
 
     Recommend_list = models.Fiction_list.objects.filter(
-        cassificationc=models.Classification.objects.get(id=27))
+        cassificationc=models.Classification.objects.get(id=1))
     return render(request, "index.html", {"Classification": Classification, "Fiction_list": Fiction_list, "Ranking_list": Ranking_list, "Recommend_list": Recommend_list, "Classification_id": Classification_id})
 
 
